@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# ./demo -- one command; standard-library Python only.
+set -euo pipefail
+cd "$(dirname "$0")"
+python3 -c 'import sys; assert sys.version_info >= (3, 10), "Python 3.10+ required"'
+python3 -m unittest discover -s tests -v
+python3 -m medallion.cli demo "$@"
