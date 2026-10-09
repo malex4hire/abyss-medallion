@@ -3,6 +3,8 @@
 <p align="center"><strong>Bad source data remains visible. Reconciliation cannot waive it. Release stays blocked.</strong></p>
 <p align="center">Python 3.10+ · Standard library · Offline · SQLite · MIT</p>
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+
 An executable Medallion Architecture reference using **synthetic SAP ECC-like extracts**. It preserves source data in Bronze, validates and quarantines records in Silver, and produces S/4HANA-oriented analytical staging models in Gold. Every run leaves record lineage, document decisions, financial reconciliation, and an explicit release decision.
 
 **This is a portfolio engineering demonstration, not evidence of actual SAP migration experience.** No SAP instance, credentials, customer data, proprietary extract, CVI execution, or target-system load is involved.
